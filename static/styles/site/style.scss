@@ -5,10 +5,62 @@
 $primary-light: #F03838;
 $secondary-light: #303030;
 $background-light: #FEFEFE;
+$text-light: #424242;
+$blockquote-p-light: #AEADAD;
+$pre-border-light: #DDDBCC;
+$code-background-light: #F1F0EA;
+$hr-border-bottom-light: #303030;
+$table-background-light: #f7f7f3;
+$table-border-bottom-light: $hr-border-bottom-light;
+$selection-background-light: #FFF5B8;
+$selection-color-light: #000;
+$button-color-light: $background-light;
+$button-square-color-light: #FFF;
+$site-title-a-light: $background-light;
+$site-nav-item-hover-light: #424242;
+$blog-description-light: #AEADAD;
+$blog-description-a-light: #AEADAD;
+$post-tags-share-light: #AEADAD;
+$share-a-light: #FFF;
+$post-stub-a-light: #424242;
+$post-stub-a-hover-light: #FCF5F5;
+$author-meta-light: #AEADAD;
+$author-meta-a-light: #AEADAD;
+$footer-background-text-light: #D3D3D3;
+$footer-button-square-hover-light: #121212;
+$footer-copyright-light: #656565;
+$footer-copyright-a-light: #656565;
+$footer-copyright-a-hover-light: #FEFEFE;
 
 $primary-dark: #F03838;
 $secondary-dark: #FEFEFE;
 $background-dark: #333333;
+$text-dark: #FEFEFE;
+$blockquote-p-dark: #AEADAD;
+$pre-border-dark: #DDDBCC;
+$code-background-dark: #F1F0EA;
+$hr-border-bottom-dark: #303030;
+$table-background-dark: #424242;
+$table-border-bottom-dark: $hr-border-bottom-dark;
+$selection-background-dark: #FFF5B8;
+$selection-color-dark: #FFF;
+$button-color-dark: $background-dark;
+$button-square-color-dark: $background-dark;
+$site-title-a-dark: $background-dark;
+$site-nav-item-hover-dark: #424242;
+$blog-description-dark: #AEADAD;
+$blog-description-a-dark: #AEADAD;
+$post-tags-share-dark: #AEADAD;
+$share-a-dark: $background-dark;
+$post-stub-a-dark: $text-dark;
+$post-stub-a-hover-dark: #FCF5F5;
+$author-meta-dark: #AEADAD;
+$author-meta-a-dark: #AEADAD;
+$footer-background-text-dark: #D3D3D3;
+$footer-button-square-hover-dark: #AEADAD;
+$footer-copyright-dark: #656565;
+$footer-copyright-a-dark: #656565;
+$footer-copyright-a-hover-dark: #FEFEFE;
 
 
 
@@ -20,7 +72,7 @@ html, body { height: 100%; }
 
 body {
     background: $background-light;
-    color: #424242;
+    color: $text-light;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 18px;
 }
@@ -66,7 +118,7 @@ blockquote {
     padding: 5px 30px;
 
     p {
-        color: #AEADAD;
+        color: $blockquote-p-light;
         display: block;
         font-style: italic;
         margin: 0;
@@ -96,7 +148,7 @@ img {
 }
 
 pre {
-    border: 1px solid #DDDBCC;
+    border: 1px solid $pre-border-light;
     border-radius: 3px;
     margin: 0 0 20px;
     overflow-x: auto;
@@ -112,12 +164,12 @@ code {
     padding: 2px 4px;
     font-size: 90%;
     border-radius: 4px;
-    background-color: #f1f0ea;
+    background-color: $code-background-light;
 }
 
 hr {
     border: none;
-    border-bottom: 1px dotted #303030;
+    border-bottom: 1px dotted $hr-border-bottom-light;
     margin: 45px 0;
 }
 
@@ -127,7 +179,7 @@ table {
 
     tbody > tr:nth-child(odd) > td,
     tbody > tr:nth-child(odd) > th {
-        background-color: #f7f7f3;
+        background-color: $table-background-light;
     }
 
     th {
@@ -137,18 +189,18 @@ table {
 
     td { padding: 10px; }
 
-    tr { border-bottom: 1px dotted #AEADAD; }
+    tr { border-bottom: 1px dotted $table-border-bottom-light; }
 }
 
 ::selection {
-    background: #FFF5B8;
-    color: #000;
+    background: $selection-background-light;
+    color: $selection-color-light;
     display: block;
 }
 
 ::-moz-selection {
-    background: #FFF5B8;
-    color: #000;
+    background: $selection-background-light;
+    color: $selection-color-light;
     display: block;
 }
 
@@ -197,7 +249,7 @@ table {
     background: $secondary-light;
     border: none;
     border-radius: 3px;
-    color: #FEFEFE;
+    color: $button-color-light;
     font-size: 14px;
     font-weight: 700;
     padding: 10px 12px;
@@ -208,7 +260,7 @@ table {
 
 .button-square {
     background: $primary-light;
-    color: #FFF;
+    color: $button-square-color-light;
     float: left;
     font-size: 17px;
     margin: 0 0 0 10px;
@@ -251,7 +303,7 @@ table {
     a {
         float: left;
         background: $primary-light;
-        color: #FEFEFE;
+        color: $site-title-a-light;
         padding: 5px 10px 6px;
 
         &:hover { background: $secondary-light; }
@@ -275,7 +327,7 @@ table {
     font-weight: 700;
     margin: 0 10px;
 
-    a:hover { color: #424242; }
+    a:hover { color: $site-nav-item-hover-light; }
 }
 
 /* ============================================================ */
@@ -308,13 +360,13 @@ table {
 .post-date,
 .post-reading,
 .blog-description {
-    color: #AEADAD;
+    color: $blog-description-light;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
     margin: 25px 0 0;
 
-    a { color: #AEADAD; }
+    a { color: $blog-description-a-light; }
     a:hover { color: $primary-light; }
 }
 
@@ -356,7 +408,7 @@ table {
 
 .post-tags,
 .share {
-    color: #AEADAD;
+    color: $post-tags-share-light;
     font-size: 14px;
 
     span { font-weight: 600; }
@@ -373,7 +425,7 @@ table {
 
     a {
         background: $primary-light;
-        color: #FFF;
+        color: $share-a-light;
         display: inline-block;
         font-size: 16px;
         margin-left: 5px;
@@ -429,11 +481,11 @@ table {
         -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         display: block;
-        color: #424242;
+        color: $post-stub-a-light;
         padding: 20px 5px;
 
         &:hover {
-            background: #FCF5F5;
+            background: $post-stub-a-hover-light;
             color: $primary-light;
             padding: 20px 12px;
 
@@ -518,7 +570,7 @@ table {
 }
 
 .author-meta {
-    color: #AEADAD;
+    color: $author-meta-light;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
@@ -533,7 +585,7 @@ table {
 
     i { margin-right: 8px; }
 
-    a { color: #AEADAD; }
+    a { color: $author-meta-a-light; }
     a:hover { color: $primary-light; }
 }
 
@@ -549,7 +601,7 @@ table {
 
 .footer {
     background: $secondary-light;
-    color: #D3D3D3;
+    color: $footer-background-text-light;
     height: 265px;
     margin-top: 95px;
     overflow: auto;
@@ -558,22 +610,22 @@ table {
 
     .site-title a:hover,
     .button-square:hover {
-        background: #121212;
+        background: $footer-button-square-hover-light;
     }
 }
 
 .footer-copyright {
-    color: #656565;
+    color: $footer-copyright-light;
     font-size: 14px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
 
     a {
-        color: #656565;
+        color: $footer-copyright-a-light;
         font-weight: 700;
 
-        &:hover { color: #FEFEFE; }
+        &:hover { color: $footer-copyright-a-hover-light; }
     }
 }
 
@@ -775,4 +827,189 @@ table {
     }
 
     .footer-copyright { padding: 0 10px; }
+}
+
+@media (prefers-color-scheme: dark) {
+
+body {
+    background: $background-dark;
+    color: $text-dark;
+}
+
+a {
+    color: $primary-dark;
+}
+
+blockquote {
+    border-left: 1px dotted $primary-dark;
+
+    p {
+        color: $blockquote-p-dark;
+    }
+}
+
+pre {
+    border: $pre-border-dark;
+}
+
+hr {
+    border-bottom: 1px dotted $hr-border-bottom-dark;
+}
+
+table {
+    tbody > tr:nth-child(odd) > td,
+    tbody > tr:nth-child(odd) > th {
+        background-color: $table-background-dark;
+    }
+
+    tr { border-bottom: 1px dotted $table-border-bottom-dark; }
+}
+
+::selection {
+    background: $selection-background-dark;
+    color: $selection-color-dark;
+    display: block;
+}
+
+::-moz-selection {
+    background: $selection-background-light;
+    color: $selection-color-light;
+    display: block;
+}
+
+.button {
+    background: $secondary-dark;
+    color: $button-color-dark;
+    &:hover { background: $primary-dark; }
+}
+
+.button-square {
+    background: $primary-dark;
+    color: $button-square-color-dark;
+    &:hover { background: $secondary-dark; }
+}
+
+.site-title {
+    a {
+        background: $primary-dark;
+        color: $site-title-a-dark;
+        &:hover { background: $secondary-dark; }
+    }
+}
+
+.post-header {
+    border-bottom: 6px solid $secondary-dark;
+}
+
+.blog-description {
+    color: $blog-description-dark;
+
+    a { color: $blog-description-a-dark; }
+    a:hover { color: $primary-dark; }
+}
+
+.post-line {
+    &:after {
+        border-bottom: 1px dotted $secondary-light;
+    }
+}
+
+.post-content {
+    a:hover {
+        border-bottom: 1px dotted $primary-light;
+    }
+}
+
+.post-tags,
+.share {
+    color: $post-tags-share-dark;
+}
+
+.post-tags {
+    a:hover { color: $secondary-dark; }
+}
+
+.share {
+    a {
+        background: $primary-dark;
+        color: $share-a-dark;
+    }
+
+    a:hover { background: $secondary-dark; }
+}
+
+.newer-posts,
+.older-posts {
+    background: $primary-dark;
+    color: #FEFEFE;
+
+    &:hover {
+        background: $secondary-dark;
+    }
+}
+
+.post-stub {
+    border-bottom: 1px dotted $secondary-dark;
+
+    a {
+        color: $post-stub-a-dark;
+
+        &:hover {
+            background: $post-stub-a-hover-dark;
+            color: $primary-dark;
+
+            .post-stub-tag { background: $primary-dark; }
+        }
+    }
+}
+
+.post-stub-tag {
+    background: $secondary-dark;
+    color: #000;
+}
+
+.author-profile {
+    &:after {
+        border-bottom: 1px dotted $secondary-dark;
+    }
+}
+
+.author-meta {
+    color: $author-meta-dark;
+
+    a { color: $author-meta-a-dark; }
+    a:hover { color: $primary-dark; }
+}
+
+.footer {
+    background: $secondary-dark;
+    color: $footer-background-text-dark;
+
+    .button-square:hover {
+        background: $footer-button-square-hover-dark;
+    }
+}
+
+.footer-copyright {
+    color: $footer-copyright-dark;
+    a {
+        color: $footer-copyright-a-dark;
+        &:hover { color: $footer-copyright-a-hover-dark; }
+    }
+}
+
+#nprogress .bar { background: $primary-dark; }
+
+#nprogress .peg { box-shadow: 0 0 10px $primary-dark, 0 0 5px $primary-dark; }
+
+#nprogress .spinner-icon {
+    border-top-color: $primary-dark;
+    border-left-color: $primary-dark;
+}
+
+
+}
+
+@media (prefers-color-scheme: light) {
+
 }
