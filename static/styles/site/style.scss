@@ -524,7 +524,7 @@ table {
 .post-stub-date {
     display: inline-block;
 
-    &:before { content: "/ "; }
+    &:before { content: " / "; }
 }
 
 .next-posts-link a,
